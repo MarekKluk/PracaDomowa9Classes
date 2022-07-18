@@ -1,5 +1,5 @@
 import './styles.css';
+import Factory from './Classes/Factory';
 
-const paragraph = document.createElement('p');
-paragraph.innerText = 'Hello!';
-document.body.append(paragraph);
+let factory = new Factory();
+factory.runProductionLine();
