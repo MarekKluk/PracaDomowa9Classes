@@ -4,8 +4,8 @@ import Strings from './Strings';
 import Body from './Body';
 
 function randomizeIfItsFaulty() {
-  let x = generateRandomNumber(1, 10);
-  return x <= 3 ? true : false;
+  const randomNumber = generateRandomNumber(1, 10);
+  return randomNumber <= 3;
 }
 
 export default class Guitar {

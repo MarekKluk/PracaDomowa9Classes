@@ -34,13 +34,14 @@ export default class Factory {
     }
     this.stringStorage.push(...this.stringSupplier.strings);
     this.neckStorage.push(...this.neckSupplier.necks);
+    const firstNeck = this.neckStorage.shift();
+    const firstStrings = this.stringStorage.shift();
+
     this.guitar = new Guitar(
-      this.neckStorage[0],
-      this.stringStorage[0],
-      this.body,
+        firstNeck,
+        firstStrings,
+        this.body,
     );
-    this.stringStorage.splice(0, 1);
-    this.neckStorage.splice(0, 1);
     this.guitar.tune();
     if (this.guitar.isPlayable()) {
       console.log('guitar is produced');

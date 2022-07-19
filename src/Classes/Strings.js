@@ -1,3 +1,1 @@
-export default class Strings {
-  constructor() {}
-}
+export default class Strings {}

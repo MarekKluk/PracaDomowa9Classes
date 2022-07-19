@@ -1,3 +1,2 @@
-export default class Body {
-  constructor() {}
-}
+export default class Body {}
+

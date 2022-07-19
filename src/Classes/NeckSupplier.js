@@ -24,7 +24,7 @@ export default class NeckSupplier {
     }
     this.numberOfNecks = 0;
     this.lastSupplyTimestamp = Date.now() - this.supplyTimestampStart;
-    if (this.lastSupplyTimestamp < this.frequencyInSeconds) {
+    if (this.lastSupplyTimestamp < this.frequencyInSeconds*1000) {
       return null;
     }
     return this.necks;

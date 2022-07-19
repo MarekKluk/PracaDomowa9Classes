@@ -1,3 +1,1 @@
-export default class Neck {
-  constructor() {}
-}
+export default class Neck {}
